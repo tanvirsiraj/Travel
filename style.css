@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+:root {
+    --primary-color: #FF5400;
+}
+
+nav {
+    margin-block: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img {
+    width: 48px;
+    height: 56.008px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+nav a p {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+nav a p span {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav ul li:first-child {
+    color: var(--primary-color);
+}
+
+/* hero section  */
+.hero-sec {}
+
+.hero-img-container {
+
+    position: relative;
+}
+
+.hero-img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+.hero-content {
+    padding-block: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    gap: 24px;
+}
+
+#where {
+    padding: 16px;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: left;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#when,
+#type,
+#submit {
+    background-color: white;
+    padding-inline: 16px;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: left;
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#when #time,
+#type {
+    border: none;
+    outline: none;
+    color: rgba(19, 19, 24, 0.50);
+}
+
+
+#type-text {
+    text-wrap: nowrap;
+}
+
+#submit {
+    gap: 5px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit i {
+    font-size: 16px;
+}
+
+#submit input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+
+
+/* media query  */
+
+@media only screen and (min-width:992px) {
+    .icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-inline: 4px;
+    }
+
+    nav {
+        margin-block: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: start;
+        /* gap: 20px; */
+        background: var(--primary-color);
+        position: fixed;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        width: 200px;
+        color: white;
+        text-align: left;
+    }
+
+    nav a img {
+        width: 38px;
+        height: 45px;
+    }
+
+    nav a p {
+        color: #131318;
+        font-size: 20px;
+
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .hero-img-container img {
+        height: 450px;
+    }
+
+    .hero-content {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        color: white;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    form {
+
+        background: rgba(255, 255, 255, 0.30);
+        flex-direction: column;
+
+    }
+
+    #when,
+    #type,
+    #submit {
+        padding-block: 8px;
+    }
+
+
+}
