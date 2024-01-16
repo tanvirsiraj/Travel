@@ -26,6 +26,32 @@ img {
     --primary-color: #FF5400;
 }
 
+.section-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+section {
+    margin-block: 100px;
+}
+
+.description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px;
+}
+
 nav {
     margin-block: 30px;
     display: flex;
@@ -70,7 +96,6 @@ nav ul li:first-child {
 }
 
 /* hero section  */
-.hero-sec {}
 
 .hero-img-container {
 
@@ -236,6 +261,30 @@ p {
     font-weight: 300;
 }
 
+/* popular tour section  */
+
+.popular-tour-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+}
+
+
+.popular-tour-content div:first-child p {
+
+    margin-block: 20px;
+}
+
+.popular-tour-content .btn {
+    border: none;
+    cursor: pointer;
+}
+
+.popular-tour-content li {
+    margin-block: 20px;
+}
+
 /* media query  */
 
 @media only screen and (min-width:992px) {
@@ -245,6 +294,9 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+    section {
+        margin-block: 30px;
+    }
 
     nav,
     section {
@@ -310,10 +362,8 @@ p {
     }
 
     form {
-
         background: rgba(255, 255, 255, 0.30);
         flex-direction: column;
-
     }
 
     #when,
@@ -350,6 +400,21 @@ p {
 
         font-size: 14px;
 
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .popular-tour-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+
+    }
+
+    .popular-tour-content div:first-child p {
+
+        margin-block: 15px;
     }
 
 
