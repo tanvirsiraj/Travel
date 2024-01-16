@@ -33,25 +33,25 @@ nav {
     align-items: center;
 }
 
-nav a img {
+#logo img {
     width: 48px;
     height: 56.008px;
 }
 
-nav a {
+#logo {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
 }
 
-nav a p {
+#logo p {
     color: #131318;
     font-size: 36px;
     font-weight: 800;
 }
 
-nav a p span {
+#logo p span {
     color: var(--primary-color);
 }
 
@@ -187,7 +187,54 @@ form {
     color: white;
 }
 
+footer {
+    margin-top: 80px;
+    background: rgba(19, 19, 24, 0.05);
+    padding-block: 80px;
 
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    color: #5A5A5D;
+    font-size: 16px;
+    max-width: 750px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+footer .social-icon {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+footer .social-icon i {
+    color: black;
+    font-size: 24px;
+}
+
+
+hr {
+    border-color: rgba(19, 19, 24, 0.10);
+    width: 872px;
+    margin-block: 50px;
+}
+
+p {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
+}
 
 /* media query  */
 
@@ -198,7 +245,9 @@ form {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
+
+    nav,
+    section {
         margin-inline: 4px;
     }
 
@@ -220,12 +269,12 @@ form {
         text-align: left;
     }
 
-    nav a img {
+    #logo img {
         width: 38px;
         height: 45px;
     }
 
-    nav a p {
+    #logo p {
         color: #131318;
         font-size: 20px;
 
@@ -271,6 +320,36 @@ form {
     #type,
     #submit {
         padding-block: 8px;
+    }
+
+    footer {
+        margin-top: 80px;
+        padding-block: 40px;
+
+    }
+
+    .footer-content p {
+        font-size: 14px;
+    }
+
+
+    footer .social-icon i {
+        color: black;
+        font-size: 24px;
+    }
+
+
+    hr {
+        border-color: rgba(19, 19, 24, 0.10);
+        width: 90%;
+        margin: auto;
+        margin-block: 40px;
+    }
+
+    p {
+
+        font-size: 14px;
+
     }
 
 
